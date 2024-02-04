@@ -1,0 +1,118 @@
+@media(max-width:1410px) {
+  body header nav {
+    padding: 7px 143px !important;
+  }
+}
+@media(max-width:1212px) {
+  body header nav {
+    padding: 7px 95px !important;
+  }
+  body header nav ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 15px;
+  }
+}
+@media(max-width:1116px) {
+  body header nav {
+    padding: 7px 65px !important;
+  }
+  body header .banner .banner-title p {
+    font-size: 30px;
+  }
+  body header .banner .banner-title span {
+    font-size: 13px;
+  }
+}
+@media(max-width:1199px) {
+  body header .logo a img {
+    width: 75px!important;
+  }
+  body header .logo .logo-name h1 {
+    font-size: 20px!important;
+  }
+  body header .contact .phone {
+    font-size: 16px!important;
+    margin-right: 0!important;
+  }
+  body header .contact .phone i {
+    font-size: 19px!important;
+  }
+  body header .contact .location {
+    margin-right: 23px!important;
+    font-size: 16px!important;
+  }
+  body header .contact .location i {
+    font-size: 24px!important;
+  }
+  body header .contact button {
+    margin-right: 21px!important;
+    font-size: 15px!important;
+    padding: 8px 13px!important;
+  }
+  body header .banner .banner-title p {
+    font-size: 33px;
+  }
+  body header .banner .banner-title span {
+    font-size: 14px;
+  }
+}
+@media(max-width:992px) {
+  body header .logo a img {
+    width: 60px!important;
+  }
+  body header .logo .logo-name h1 {
+    font-size: 17px!important;
+  }
+  body header .contact .phone {
+    font-size: 15px!important;
+    margin-right: 0!important;
+  }
+  body header .contact .phone i {
+    font-size: 17px!important;
+  }
+  body header .contact .location {
+    margin-right: 10px!important;
+    font-size: 15px!important;
+  }
+  body header .contact .location i {
+    font-size: 19px!important;
+  }
+  body header .contact button {
+    margin-right: 15px!important;
+    font-size: 14px!important;
+    padding: 8px 13px!important;
+  }
+  body header nav ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 14px;
+    margin: 0 1px;
+  }
+  body header .banner .banner-title p {
+    font-size: 27px;
+  }
+  body header .banner .banner-title span {
+    font-size: 12px;
+  }
+}
+@media(max-width:879px) {
+  body header .contact button i {
+    font-size: 14px;
+  }
+  body header nav ul.navbar-nav li.nav-item a.nav-link  {
+    padding: 10px 7px;
+  }
+  body header nav ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 13px;
+    margin: 0px;
+  }
+  body header nav {
+    padding: 7px 46px !important;
+  }
+  body header .banner .banner-title p {
+    font-size: 24px;
+  }
+  body header .banner .banner-title span {
+    font-size: 12px;
+  }
+}
+@media(max-width:768px) {
+
+}
