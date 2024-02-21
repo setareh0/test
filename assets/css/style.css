@@ -1,4 +1,7 @@
-@import url(../css/font.css);
+@font-face {
+  font-family: IranSansWeb;
+  src: url(/assets/fonts/IRANSansWeb.ttf);
+}
 body {
   direction: rtl;
   text-align: right;
@@ -66,6 +69,12 @@ body header nav ul.navbar-nav li.nav-item a.nav-link {
   color: #fff;
   margin: 0 5px;
   font-size: 17px;
+}
+body .navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
 }
 body section.banner {
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 43%, rgba(0, 0, 0, 0.7) 80%), url("../image/students-knowing-right-answer.jpg") !important;
@@ -395,7 +404,7 @@ body .swiper-pagination-bullet-active {
   background-color: #4070F4;
 }
 body section.comments {
-  background-color: #004677;
+  background-color: #1470E2;
 }
 body section.gallery {
   margin: 0 142px;
@@ -405,10 +414,14 @@ body section.gallery h2 {
   font-weight: 500;
 }
 body section.gallery .celebrations {
-  border: 10px solid cadetblue;
   border-radius: 200%;
   width: 100%;
   position: relative;
+  border: 6px solid;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #090979, #1470E2 -23%, #01c5ec 90%) border-box;
+  color: #313149;
+  border: 6px solid transparent;
+  border-radius: 100%;
 }
 body section.gallery .celebrations .celebration-img {
   height: 255px;
@@ -442,7 +455,7 @@ body section.gallery .celebrations:hover a {
 body section.forms {
   margin-top: 150px;
   padding: 50px 0;
-  background-color: #004677;
+  background-color: #1470E2;
 }
 body section.forms h2 {
   margin-bottom: 50px;
@@ -477,13 +490,20 @@ body section.news .news-title h4 {
 body section.news .news-title a {
   font-size: 19px;
   box-shadow: none;
-  border: 2px solid #004677;
   padding: 7px 46px;
-  color: #004677;
+  border-image: linear-gradient(145deg, #090979 11%, #00d4ff 100%) 16;
 }
-body section.news .news-title a:hover {
+body section.news .news-title a.btn-news {
+  width: 180px;
+  height: 50px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #020024, #090979 -54%, #00d4ff 75%) border-box;
+  color: #313149;
+  border: 2px solid transparent;
+  border-radius: 6px;
+}
+body section.news .news-title a.btn-news:hover {
+  background-image: linear-gradient(90deg, #004677 6%, #00d4ff 100%);
   color: #fff;
-  background-color: #004677;
 }
 body section.news .blog img {
   width: 100%;
@@ -527,4 +547,75 @@ body section.news .blog a.btn-blog:hover {
 }
 body section.news .blog a.btn-blog:hover:before {
   background-color: #E03A3E;
+}
+body footer {
+  margin-top: 95px;
+  background-color: #2f3f54;
+  padding: 50px 0 0px;
+}
+body footer .about-school p {
+  font-size: 14px;
+  margin-left: 40px;
+}
+body footer ul.link {
+  padding: 0;
+  margin-bottom: 40px;
+}
+body footer ul.link li {
+  margin: 15px 0;
+  color: #FFF;
+}
+body footer ul.link li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+body footer ul.contact-us {
+  list-style: none;
+  padding: 0;
+}
+body footer ul.contact-us li {
+  margin: 15px 0;
+}
+body footer ul.contact-us li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+body footer ul.contact-us li a i {
+  margin-left: 9px;
+  font-size: 17px;
+}
+body footer ul.list-inline {
+  padding-top: 10px;
+}
+body footer ul.list-inline li.list-inline-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+body footer ul.list-inline li.list-inline-item a i {
+  font-size: 26px;
+}
+body footer #map {
+  height: 200px;
+  margin: 37px 30px 0 0;
+  border-radius: 5px;
+}
+body footer .mapboxgl-ctrl-bottom-left {
+  display: none;
+}
+body footer .mapboxgl-ctrl-bottom-right {
+  display: none;
+}
+body footer .footer-copyright {
+  background-color: #1F2937;
+  padding: 23px 0 6px;
+}
+body footer .footer-copyright p {
+  color: #9CA3AF;
+  font-size: 13px;
+}
+body footer .footer-copyright p a {
+  color: #fff;
 }

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="component/bootstrap/css/bootstrap.fa.min.css">
   <link rel="stylesheet" href="component/fontawsome/css/all.css">
   <link rel="stylesheet" href="component/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="component/css/mapbox-gl.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <title>test</title>
@@ -499,7 +500,8 @@
         <div class="col-12">
           <div class="news-title">
             <h4>آخرین اخبار</h4>
-            <a href="#" class="btn">همه اخبار</a>
+            <a href="#" class="btn btn-news">همه اخبار</a>
+            <!-- <div></div> -->
           </div>
         </div>
       </div>
@@ -557,17 +559,111 @@
   </section>
 
 
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="about-school text-white">
+            <h4 class="my-4">درباره ما</h4>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+          </div>
+        </div>
+        <div class="col-2">
+          <h4 class="link text-white my-4">پیوند ها</h4>
+          <ul class="link">
+            <li>
+              <a href="#">شبکه آموزشی تربیتی رشد</a>
+            </li>
+            <li>
+              <a href="#">گنجینه دانستنی‌ها و معماهای هوش و ریاضی</a>
+            </li>
+            <li>
+              <a href="#">سازمان سنجش</a>
+            </li>
+            <li>
+              <a href="#">پایگاه کتاب‌های درسی</a>
+            </li>
+            <li>
+              <a href="#">کتابخانه کودک و نوجوان</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h4 class="contact-us-title text-white my-4">ارتباط با ما</h4>
+          <ul class="contact-us">
+            <li>
+              <a href="#">
+                <i class="fas fa-location-dot"></i>
+                آدرس مدرسه شما
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-phone-flip"></i>
+                شماره تلفن
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-envelope"></i>
+                آدرس ایمیل شما
+              </a>
+            </li>
+          </ul>
+          <ul class="list-inline mt-4">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-telegram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-5">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <p>
+              <span>توسعه داده شده توسط جوانان خلاق و پویای </span>
+              <a href="#">
+                شرکت دانش‌بنیان زیرساخت فناوری خلاق فرتاک آموزش
+              </a>
+            </p>
+          </div>
+          <div class="col-4">
+            <p>
+              <span>کلیه حقوق مادی و معنوی برای</span>
+              <a href="#">کلاسه</a>
+              <span>محفوظ است.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  
 
-  <br>
-  <br>
-  <br><br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
+
 
 
   
@@ -576,6 +672,7 @@
   <script src="component/jquery/popper.min.js"></script>
   <script src="component/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="component/js/swiper-bundle.min.js"></script>
+  <script src="component/js/mapbox-gl.js"></script>
   <script src="assets/js/test.js"></script>
 
 </body>

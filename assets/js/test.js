@@ -7,6 +7,13 @@ $(window).scroll(function(){
     $('.about-img').removeClass('fromLeft')
     $('.about-text').removeClass('fromRight')
   }
+  console.log($(window).scrollTop())
+  if ($(window).scrollTop() > 63) {
+    $('.navbar').addClass('navbar-fixed');
+  }
+  if ($(window).scrollTop() < 64) {
+    $('.navbar').removeClass('navbar-fixed');
+  }
 })
 $(document).ready(function() {
 
@@ -61,4 +68,13 @@ var swiper = new Swiper(".slide-content", {
           slidesPerView: 3,
       },
   },
+});
+
+mapboxgl.accessToken = 'pk.eyJ1Ijoic3VyYW5pLWluc3RhIiwiYSI6ImNsczRkeG1sZjE4bzUybHJ3NHAxZ2U1bnoifQ.fcA9C0kBCK2-dqNCOhUY6g';
+const map = new mapboxgl.Map({
+    container: 'map',
+    // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+    style: 'mapbox://styles/mapbox/streets-v12',
+    center: [51.39, 35.70],
+    zoom: 11.15
 });

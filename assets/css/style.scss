@@ -1,4 +1,7 @@
-@import url(../css/font.css);
+@font-face {
+  font-family: IranSansWeb;
+  src: url(/assets/fonts/IRANSansWeb.ttf);
+}
 body {
   direction: rtl;
   text-align: right;
@@ -55,6 +58,21 @@ body {
         border-radius: 5px;
       }
     }
+    // #navbar {
+    //   overflow: hidden;
+    //   position: sticky;
+    //   top: 0;
+    //   width: 100%;
+    // }
+    // .sticky {
+    //   position: fixed;
+    //   top: 0;
+    //   width: 100%;
+    // }
+    
+    // .sticky + .content {
+    //   padding-top: 60px;
+    // }
     nav {
       background: #1470e2;
       width: 100%;
@@ -73,6 +91,12 @@ body {
         }
       }
     }
+  }
+  .navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
   }
   section.banner {
     background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 43%, rgba(0, 0, 0, 0.7) 80%), url("../image/students-knowing-right-answer.jpg") !important;
@@ -406,7 +430,7 @@ body {
     background-color: #4070F4;
   }
   section.comments {
-    background-color: #004677;
+    background-color: #1470E2;
   }
   section.gallery {
     margin: 0 142px;
@@ -415,10 +439,17 @@ body {
       font-weight: 500;
     }
     .celebrations {
-      border: 10px solid cadetblue;
+      // border: 10px solid #004677;
       border-radius: 200%;
       width: 100%;
       position: relative;
+      border: 6px solid ;
+      background: 
+      linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(90deg, #090979, #1470E2 -23%, #01c5ec 90%) border-box;
+      color: #313149;
+      border: 6px solid transparent;
+      border-radius: 100%;
       .celebration-img {
         height: 255px;
         border-radius: 131%;    
@@ -429,6 +460,10 @@ body {
         background-size: 100%!important;
         filter: brightness(0.7);
         transition: all ease-in-out .5s;
+        // border: 5px solid;
+        // border-image: linear-gradient(145deg, hsl(196, 78%, 61%) 21%, rgba(95, 156, 236, 0.1) 50%) 16;
+        // border-radius: 0px;
+        // border: 6px solid hsl(196, 78%, 61%);
       }
       a {
         position: absolute;
@@ -453,7 +488,7 @@ body {
   section.forms {
     margin-top: 150px;
     padding: 50px 0;
-    background-color: #004677;
+    background-color: #1470E2;
     h2 {
       margin-bottom: 50px;
     }
@@ -486,13 +521,58 @@ body {
       a {
         font-size: 19px;
         box-shadow: none;
-        border: 2px solid #004677;
+        // border: 2px solid #004677;
         padding: 7px 46px;
-        color: #004677;
+        // color: #004677;
+        border-image: linear-gradient(145deg, #090979 11%, #00d4ff 100%) 16;
+        // position: relative;
+        // overflow: hidden;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
       }
-      a:hover {
+      // a::before {
+      //   content: '';
+      //   background-image: conic-gradient(#fff 20deg, transparent 120deg);
+      //   width: 100%;
+      //   height: 100%;
+      //   position: absolute;
+      //   animation: rotate 2s linear infinite;
+      // }
+      // a::after {
+      //   content: 'همه اخبار';
+      //   width: 180px;
+      //   height: 180px;
+      //   background-color: #fff;
+      //   position: absolute;
+      //   border-radius: 10px;
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   color: #000;
+
+
+      // }
+      a.btn-news {
+        width: 180px;
+        height: 50px;
+        // background: linear-gradient(45deg, red, blue);
+        // border: 4px solid;
+        // border-image: linear-gradient(145deg, hsl(196, 78%, 61%) 21%, #{transparentize(hsl(214, 79%, 65%), 0.9)} 50%) 16;
+        // border-image: linear-gradient(145deg, #1470E2 50%, #040341 21%, hsl(196, 78%, 61%) 21%) 16;
+        // border-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);;
+        // border-image: linear-gradient(90deg, #020024 -6%, #090979 -11%, #00d4ff 105%);
+        // border-image-slice: 1;
+        background: 
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(90deg, #020024 , #090979 -54%, #00d4ff 75%) border-box;
+        color: #313149;
+        border: 2px solid transparent;
+        border-radius: 6px;
+      }
+      a.btn-news:hover {
+        background-image: linear-gradient(90deg, #004677 6%, #00d4ff 100%);
         color: #fff;
-        background-color: #004677;
       }
     }
     .blog {
@@ -538,6 +618,82 @@ body {
       }
       a.btn-blog:hover:before {
         background-color: #E03A3E;
+      }
+    }
+  }
+
+  footer {
+    margin-top: 95px;
+    background-color: #2f3f54;
+    padding: 50px 0 0px;
+    .about-school {
+      p {
+        font-size: 14px;
+        margin-left: 40px;
+      }
+    }
+    ul.link {
+      padding: 0;
+      margin-bottom: 40px;
+      li {
+        margin: 15px 0;
+        color: #FFF;
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 14px;
+        }
+      }
+    }
+    ul.contact-us {
+      list-style: none;
+      padding: 0;
+      li {
+        margin: 15px 0;
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 14px;
+          i {
+            margin-left: 9px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+    ul.list-inline {
+      padding-top: 10px;
+      li.list-inline-item {
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 14px;
+          i {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+    #map {
+      height: 200px;
+      margin: 37px 30px 0 0;
+      border-radius: 5px;
+    }
+    .mapboxgl-ctrl-bottom-left {
+      display: none;
+    }
+    .mapboxgl-ctrl-bottom-right {
+      display: none;
+    }
+    .footer-copyright {
+      background-color: #1F2937;
+      padding: 23px 0 6px;
+      p {
+        color: #9CA3AF ;
+        font-size: 13px;
+        a {
+          color: #fff;
+        }
       }
     }
   }
