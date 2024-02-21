@@ -1,6 +1,6 @@
 $(window).scroll(function(){
   let position = $(this).scrollTop();
-  if (position >= 600){
+  if (position >= 200){
     $('.about-img').addClass('fromLeft')
     $('.about-text').addClass('fromRight')
   }else{

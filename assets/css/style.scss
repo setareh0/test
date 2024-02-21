@@ -1,11 +1,8 @@
-@font-face {
-  font-family: IranSansWeb;
-  src: url(/assets/fonts/IRANSansWeb.ttf);
-}
+@import url(/assets/css/font.css);
 body {
   direction: rtl;
   text-align: right;
-  font-family: IranSansWeb;
+  font-family: "IRANSansWeb";
   header {
     .logo {
       display: flex;
@@ -58,21 +55,6 @@ body {
         border-radius: 5px;
       }
     }
-    // #navbar {
-    //   overflow: hidden;
-    //   position: sticky;
-    //   top: 0;
-    //   width: 100%;
-    // }
-    // .sticky {
-    //   position: fixed;
-    //   top: 0;
-    //   width: 100%;
-    // }
-    
-    // .sticky + .content {
-    //   padding-top: 60px;
-    // }
     nav {
       background: #1470e2;
       width: 100%;
@@ -99,7 +81,7 @@ body {
     width: 100%;
   }
   section.banner {
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 43%, rgba(0, 0, 0, 0.7) 80%), url("../image/students-knowing-right-answer.jpg") !important;
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 43%, rgba(0, 0, 0, 0.7) 80%), url("../image/20240221_201350_1679046816.jpg") !important;
     height: 600px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -151,13 +133,13 @@ body {
   }
   section.about-us {
     background-color: #f8f8f8;
-    padding: 60px 0 125px 0;
-    margin-top: 40px;
+    padding: 50px 0 125px 0;
     h4 {
       font-size: 30px;
       font-weight: 600;
       color: #1470e2;
       margin: 0;
+      line-height: 43px;
     }
     .underline {
       border-bottom: 5px solid #1470e2;
@@ -211,23 +193,23 @@ body {
     }
   }
   section.counters {
-    background: url(../image/classmates-friends-bag-school-education.jpg);
+    background: url(../image/20240221_195940_248584440.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 500px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     .counters {
       display: flex;
       justify-content: center;
-      margin-top: 120px;
+      flex-wrap: wrap;
+      margin: 60px 0;
       .counter {
         border-radius: 3px;
-        padding: 70px 70px;
-        margin: 0px 30px;
+        padding: 50px 70px;
+        margin: 0px 30px 20px;
         .counter-icon {
           font-size: 40px;
         }
@@ -439,9 +421,8 @@ body {
       font-weight: 500;
     }
     .celebrations {
-      // border: 10px solid #004677;
       border-radius: 200%;
-      width: 100%;
+      width: 95%;
       position: relative;
       border: 6px solid ;
       background: 
@@ -450,6 +431,9 @@ body {
       color: #313149;
       border: 6px solid transparent;
       border-radius: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 35px;
       .celebration-img {
         height: 255px;
         border-radius: 131%;    
@@ -458,12 +442,9 @@ body {
         background-position: center;
         background-size: cover;
         background-size: 100%!important;
+        background-repeat: no-repeat;
         filter: brightness(0.7);
         transition: all ease-in-out .5s;
-        // border: 5px solid;
-        // border-image: linear-gradient(145deg, hsl(196, 78%, 61%) 21%, rgba(95, 156, 236, 0.1) 50%) 16;
-        // border-radius: 0px;
-        // border: 6px solid hsl(196, 78%, 61%);
       }
       a {
         position: absolute;
@@ -521,48 +502,12 @@ body {
       a {
         font-size: 19px;
         box-shadow: none;
-        // border: 2px solid #004677;
         padding: 7px 46px;
-        // color: #004677;
         border-image: linear-gradient(145deg, #090979 11%, #00d4ff 100%) 16;
-        // position: relative;
-        // overflow: hidden;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
       }
-      // a::before {
-      //   content: '';
-      //   background-image: conic-gradient(#fff 20deg, transparent 120deg);
-      //   width: 100%;
-      //   height: 100%;
-      //   position: absolute;
-      //   animation: rotate 2s linear infinite;
-      // }
-      // a::after {
-      //   content: 'همه اخبار';
-      //   width: 180px;
-      //   height: 180px;
-      //   background-color: #fff;
-      //   position: absolute;
-      //   border-radius: 10px;
-      //   display: flex;
-      //   justify-content: center;
-      //   align-items: center;
-      //   color: #000;
-
-
-      // }
       a.btn-news {
         width: 180px;
         height: 50px;
-        // background: linear-gradient(45deg, red, blue);
-        // border: 4px solid;
-        // border-image: linear-gradient(145deg, hsl(196, 78%, 61%) 21%, #{transparentize(hsl(214, 79%, 65%), 0.9)} 50%) 16;
-        // border-image: linear-gradient(145deg, #1470E2 50%, #040341 21%, hsl(196, 78%, 61%) 21%) 16;
-        // border-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);;
-        // border-image: linear-gradient(90deg, #020024 -6%, #090979 -11%, #00d4ff 105%);
-        // border-image-slice: 1;
         background: 
         linear-gradient(#fff, #fff) padding-box,
         linear-gradient(90deg, #020024 , #090979 -54%, #00d4ff 75%) border-box;
@@ -621,7 +566,6 @@ body {
       }
     }
   }
-
   footer {
     margin-top: 95px;
     background-color: #2f3f54;
@@ -697,5 +641,4 @@ body {
       }
     }
   }
-
 }

@@ -3,23 +3,17 @@
     padding: 7px 143px !important;
   }
 }
+@media(max-width:1410px) {
+  body section.gallery {
+    margin: 0px 41px;
+  }
+}
 @media(max-width:1212px) {
   body header nav {
     padding: 7px 95px !important;
   }
   body header nav ul.navbar-nav li.nav-item a.nav-link {
     font-size: 15px;
-  }
-}
-@media(max-width:1116px) {
-  body header nav {
-    padding: 7px 65px !important;
-  }
-  body header .banner .banner-title p {
-    font-size: 30px;
-  }
-  body header .banner .banner-title span {
-    font-size: 13px;
   }
 }
 @media(max-width:1199px) {
@@ -54,8 +48,41 @@
   body header .banner .banner-title span {
     font-size: 14px;
   }
+  body section.features img {
+    height: 396px;
+    padding-top: 105px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+  body section.features .content-right h4, body section.features .content-left h4 {
+    font-size: 18px;
+  }
+  body section.features .content-right p, body section.features .content-left p {
+    font-size: 14px;
+  }
+  body section.gallery {
+    margin: 0;
+  }
+  body section.gallery .celebrations {
+    width: 59%;
+  }
+  body section.forms {
+    margin-top: 113px;
+  }
 }
-@media(max-width:992px) {
+@media(max-width:1116px) {
+  body header nav {
+    padding: 7px 65px !important;
+  }
+  body header .banner .banner-title p {
+    font-size: 30px;
+  }
+  body header .banner .banner-title span {
+    font-size: 13px;
+  }
+}
+@media(max-width:991px) {
   body header .logo a img {
     width: 60px!important;
   }
@@ -91,6 +118,39 @@
   body header .banner .banner-title span {
     font-size: 12px;
   }
+  body section.about-us .underline {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  body section.about-us {
+    text-align: center;
+  }
+  body section.features .content-right h4, body section.features .content-left {
+    font-size: 18px;
+    text-align: center;
+  }
+  body section.features .content-right p, body section.features .content-left {
+    font-size: 14px;
+    text-align: center;
+  }
+  body section.features img {
+    padding: 0;
+    width: 377px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 300px;
+  }
+  body section.forms {
+    margin-top: 73px;
+  }
+  body section.news .blog {
+    margin-top: 30px;
+    text-align: center;
+  }
+  body section.gallery .celebrations {
+    width: 62%;
+  }
 }
 @media(max-width:879px) {
   body header .contact button i {
@@ -112,15 +172,53 @@
   body header .banner .banner-title span {
     font-size: 12px;
   }
+  body section.gallery .celebrations {
+    width: 76%;
+  }
 }
-@media(max-width:768px) {
-
-}
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
   .slide-content{
     margin: 0 10px;
   }
   .swiper-navBtn{
     display: none;
+  }
+  body section.features .features-text {
+    margin: 0;
+  }
+  body section.features {
+    margin-top: 80px;
+    margin-bottom: 55px;
+  }
+  body section.features img {
+    width: 296px;
+    height: 266px;
+  }
+  body section.forms .form-title {
+    width: 147px;
+  }
+  body section.cards {
+    bottom: 0;
+    margin-top: 30px;
+  }
+  body section.banner .banner-title {
+    right: 33%;
+  }
+  body section.gallery .celebrations {
+    width: 44%;
+  }
+}
+@media(max-width:576px) {
+  body section.features img {
+    width: 270px;
+    height: 240px;
+  }
+  body section.banner .banner-title {
+    right: 0;
+  }
+}
+@media(min-width:766px) and (max-width:771px) {
+  body header nav ul.navbar-nav li.nav-item a.nav-link {
+    padding: 6px;
   }
 }
