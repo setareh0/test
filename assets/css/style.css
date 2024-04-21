@@ -1,8 +1,8 @@
-@import url(/assets/css/font.css);
+@import url(../css/font.css);
 body {
   direction: rtl;
   text-align: right;
-  font-family: "IRANSansWeb";
+  font-family: IRANSansWeb;
 }
 body header .logo {
   display: flex;
@@ -565,6 +565,7 @@ body footer ul.link {
 body footer ul.link li {
   margin: 15px 0;
   color: #FFF;
+  list-style: none;
 }
 body footer ul.link li a {
   color: #fff;

@@ -216,9 +216,81 @@
   body section.banner .banner-title {
     right: 0;
   }
+  body section.banner .banner-title p {
+    font-size: 32px;
+  }
+  body section.about-us h4 {
+    font-size: 24px;
+  }
+  body section.about-us p {
+    text-align: center;
+    margin: 10px 20px;
+    font-size: 15px;
+  }
+  body section.features {
+    margin: 0;
+  }
+  body section.features .features-title {
+    margin-top: 44px;
+  }
+  body section.gallery .celebrations {
+    width: 64%;
+  }
+  body section.forms h2 {
+    margin-bottom: 34px;
+  }
+  body footer .about-school p {
+    margin: 0;
+  }
+  body section.banner .banner-title p {
+    font-size: 31px;
+  }
+  body section.cards .card .card-body h4.card-title {
+    font-size: 19px;
+  }
+  body section.cards .card .card-body p.card-text {
+    font-size: 13px;
+  }
+  body section.counters .counters .counter .counter-icon {
+    font-size: 34px;
+  }
+  body section.counters .counters .counter .counter-value {
+    font-size: 37px;
+  }
+  body section.counters .counters .counter h4 {
+    font-size: 19px;
+  }
+  body section.news .news-title a.btn-news {
+    width: 150px;
+  }
+  body section.news .news-title a {
+    font-size: 18px;
+    padding: 7px 27px;
+  }
+  body footer ul.contact-us,
+  body footer h4.link,
+  body footer ul.link,
+  body footer h4.contact-us-title,
+  body footer .about-school,
+  body footer .footer-copyright p,
+  body footer ul.list-inline {
+    text-align: center;
+  }
+  body footer #map {
+    margin: 37px 30px 20px 0;
+  }
 }
 @media(min-width:766px) and (max-width:771px) {
   body header nav ul.navbar-nav li.nav-item a.nav-link {
     padding: 6px;
+  }
+}
+@media(max-width:425px) {
+  body header .contact button {
+    font-size: 12px !important;
+    padding: 8px 9px !important;
+  }
+  body section.gallery .celebrations {
+    width: 75%;
   }
 }

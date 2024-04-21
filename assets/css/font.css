@@ -1,21 +1,21 @@
 @font-face {
-  font-family: IranSans;
+  font-family: IRANSansWeb;
   font-style: normal;
   font-weight: normal;
-  src: url(/component/fontss/IRANSansWeb.eot);
-  src: url(/component/fontss/IRANSansWeb.woff) format(woff), url(/component/fontss/IRANSansWeb.ttf) format(ttf), url(/component/fontss/IRANSansWeb.woff2) format(woff2);
+  src: url(../../component/fontss/IRANSansWeb.eot);
+  src: url(../../component/fontss/IRANSansWeb.woff) format(woff), url(../../component/fontss/IRANSansWeb.ttf) format(ttf), url(../../component/fontss/IRANSansWeb.woff2) format(woff2);;
 }
 @font-face {
   font-family: IranSansMedium;
   font-style: normal;
   font-weight: 500;
-  src: url(/component/fontss/IRANSansWeb_Medium.eot);
-  src: url(/component/fontss/IRANSansWeb_Medium.woff) format(woff), url(/component/fontss/IRANSansWeb_Medium.ttf) format(ttf), url(/component/fontss/IRANSansWeb_Medium.woff2) format(woff2);
+  src: url(../../component/fontss/IRANSansWeb_Medium.eot);
+  src: url(../../component/fontss/IRANSansWeb_Medium.woff) format(woff), url(../../component/fontss/IRANSansWeb_Medium.ttf) format(ttf), url(../../component/fontss/IRANSansWeb_Medium.woff2) format(woff2);
 }
 @font-face {
   font-family: IranSansBold;
   font-style: normal;
   font-weight: bold;
-  src: url(/component/fontss/IRANSansWeb_Bold.eot);
-  src: url(/component/fontss/IRANSansWeb_Bold.woff) format(woff), url(/component/fontss/IRANSansWeb_Bold.ttf) format(ttf), url(/component/fontss/IRANSansWeb_Bold.woff2) format(woff2);
-}
+  src: url(../../component/fontss/IRANSansWeb_Bold.eot);
+  src: url(../../component/fontss/IRANSansWeb_Bold.woff) format(woff), url(../../component/fontss/IRANSansWeb_Bold.ttf) format(ttf), url(../../component/fontss/IRANSansWeb_Bold.woff2) format(woff2);
+} 
